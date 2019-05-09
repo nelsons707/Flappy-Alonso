@@ -10,6 +10,9 @@ class Game: public AppComponent, private Timer{
     Rect* projectile;
     
     TexRect* mangoPod;
+    TexRect* battery;
+    Rect* hitBox;
+    AnimatedRect* backg;
     
     bool projectileVisible;
     bool mushroomVisible;
@@ -20,6 +23,11 @@ class Game: public AppComponent, private Timer{
     float deg;
     bool bounceUp;
     bool gravity;
+    
+    enum state{jump, down, dead};
+    state podstate = down;
+    
+    int hangTime;
 public:
     AnimatedRect* explosion;
     Game();
