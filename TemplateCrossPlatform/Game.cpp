@@ -206,6 +206,7 @@ void Game::action() {
 			backg->setX(-2);
 			backg1->setX(-6);
 			backg2->setX(-6);
+			attemptCount++;
 
 			break;
 
