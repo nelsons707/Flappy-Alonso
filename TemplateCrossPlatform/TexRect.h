@@ -1,4 +1,4 @@
-#ifndef TexRect_h
+ #ifndef TexRect_h
 #define TexRect_h
 
 #include "Rect.h"
@@ -23,6 +23,7 @@ public:
     TexRect(const char*, float, float, float, float);
     
     void draw(float z) const;
+    void Delete(float z) const;
 };
 
 #endif
